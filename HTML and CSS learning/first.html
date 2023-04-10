@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My First HTML Page</title>
+    <link rel="icon" href="html5.png"> <!-- Relative URL-->
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h1>Hello World!!!</h1>
+        <p>Hello Welcome to HTML and CSS learning</p>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#html">Go to FrontEnd Topics</a>
+                    <!--Internal URL-->
+                </li>
+                <li>
+                    <a href="#css">Go to Todo list</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <h2>Hello World 2</h2>
+        <p>Welcome to the learning and practising in <strong>HTML and CSS</strong> </p>
+        <hr> <!--  for horizontal line draw -->
+        <article id="html">
+            <h3>FrontEnd Development</h3>
+
+            <img src="img/HTML5.png" alt="HTML 5" title="This is an HTML Course" width="200" height="200">
+            <figure>
+                <figcaption>This is Front End Training</figcaption>
+            </figure>
+            <section>
+
+                <ul>
+                    <!--Unordered List-->
+                    <h3>Unordered List Topics :</h3>
+                    <li>&nbsp;&nbsp; <acronym title="Hyper Text Markup Language & Cascading Style Sheets">HTML &
+                            CSS</acronym>
+                    </li>
+                    <li>&nbsp;&nbsp; JavaScript</li>
+                    <li>&nbsp;&nbsp; React</li>
+                    <li>&nbsp;&nbsp; Bootstrap</li>
+                    <li>&nbsp;&nbsp; Angular</li>
+                    <li>&nbsp;&nbsp; TypeScript</li>
+                </ul>
+            </section>
+            <hr>
+            <h3>Table Creation</h3>
+            <table>
+                <caption>Table Example</caption>
+                <thead>
+                    <th>Time</th>
+                    <th>Todo List</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <time datetime="08:00">8 A.M.</time>
+                        </td>
+                        <td>Pre Breakfast</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            11 A.M.
+                        </td>
+                        <td>Breakfast</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2 P.M.
+                        </td>
+                        <td>Lunch</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            5 P.M.
+                        </td>
+                        <td>Snacks</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            8 P.M.
+                        </td>
+                        <td>Dinner</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">
+                            This is my daily schedule
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+            <hr>
+            <aside>
+                <details>
+                    <summary>How was your day??</summary>
+                    <p>It is so <mark>long and Hectic</mark></p>
+                </details>
+            </aside>
+        </article>
+        <hr>
+        <!--link to MDN lists absolute URL-->
+        <a href="https://developer.mozilla.org">Resourses to learn FrontEnd</a>
+        <hr>
+        <h3>Ordered List</h3>
+        <figure>
+            <img src="img/fruits.png" alt="Fruits" title="Types of Fruits" width="200" height="200" loading="lazy">
+            <figcaption>Types of Fruits</figcaption>
+        </figure>
+
+
+        <ol>
+            <!--Ordered List-->
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Carrot</li>
+            <li>Dragon Fruit</li>
+            <li>Guava</li>
+            <li>Tomato</li>
+            <li>Mango</li>
+        </ol>
+
+        <hr>
+        <h3>Description List</h3>
+        <dl>
+            <!--Description List-->
+            <dt>Who</dt>
+            <dd>World Health Organization</dd>
+            <dt>WWW</dt>
+            <dd>World Wide Web</dd>
+        </dl>
+        <hr>
+        <section id="css">
+            <figure>
+                <img src="img/courses.png" alt="Courses" title="Some todo list" width="200" height="200" loading="lazy">
+                <figcaption>Todo list</figcaption>
+            </figure>
+            <ul>
+                <li>This is HTML page</li>
+                <li>This is learning HTML</li>
+                <li>This is really good to learn</li>
+                <li>After this it is nice to learn CSS</li>
+                <li>Good One</li>
+            </ul>
+        </section>
+        <hr>
+        <h3>Creating a Form</h3>
+        <form action="https://httpbin.org/get" method="GET">
+            <p>
+                <label for="fName">First Name</label>
+                <input type="text" name="fName" id="fName" placeholder="First Name" autocomplete="on" required
+                    autofocus>
+            </p>
+            <p>
+                <label for="lName">Last Name</label>
+                <input type="text" name="lName" id="lName" placeholder="Last Name" autocomplete="on" required>
+            </p>
+            <p>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+            </p>
+            <p>
+                <label for="phone">Phone No</label>
+                <input type="tel" name="phone" id="phone" placeholder="Phone Number" pattern="[0-9]{10}" required>
+            </p>
+            <p>
+                <label for="decade">Select Year</label>
+                <input type="number" name="decade" id="decade" min="1900" max="2022" step="10" value="1910" required>
+            </p>
+            <!--   <p>
+                <label for="select">Select CoolDrink</label>
+                <select name="select" id="select" >
+                    <optgroup label="Drinks">
+                        <option value="thumpsUp">Thumps Up</option>
+                        <option value="sprit">Sprit</option>
+                        <option value="pepsi">Pepsi</option>
+                        <option value="coca-cola">Coca-Cola</option>
+                        <option value="limca">Limca</option>
+                        <option value="frooti">Frooti</option>
+                    </optgroup>
+                    <option value="other">other</option>
+                </select>
+            </p> -->
+            <p>
+                <label for="select">Select CoolDrink</label>
+                <input type="text" name="select" id="select" list="select-list">
+                <datalist id="select-list">
+                    <option value="thumpsUp">
+                    <option value="sprit">
+                    <option value="pepsi">
+                    <option value="coca-cola">
+                    <option value="limca">
+                    <option value="frooti">
+                    <option value="other">
+                </datalist>
+                </select>
+            </p>
+            <fieldset>
+                <!--Radio Type-->
+                <legend>What is your gender?</legend>
+                <p>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <!--the name must be same , id & value must differ-->
+                    <label for="male">Male</label>
+                </p>
+                <p>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female">Female</label>
+                </p>
+                <p>
+                    <input type="radio" name="gender" id="other" value="other">
+                    <label for="other">Other</label>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>What are your hobbies? </legend>
+                <p>
+                    <input type="checkbox" name="hobbie" id="playing" value="playing">
+                    <label for="playing">Playing</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="hobbie" id="writing" value="writing">
+                    <label for="writing">Writing</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="hobbie" id="eating" value="eating">
+                    <label for="eating">Eating</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="hobbie" id="sleeping" value="sleeping">
+                    <label for="sleeping">Sleeping</label>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <label for="message">Your Message:</label>
+                <br>
+                <textarea name="message" id="message" cols="30" rows="10"
+                    placeholder="Type your message here"></textarea>
+            </fieldset>
+            <br>
+            <button type="submit">Submit</button>
+            <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+            <button type="reset">Reset</button>
+
+
+
+        </form>
+
+        <hr>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mp3">
+        </audio>
+        <br>
+        <hr>
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </main>
+    <hr>
+    &lt;&lt;&lt; <a href="address.html">Satya Pavani</a> &gt;&gt;&gt;
+    <br>
+
+    <a href="#">Go to Top</a>
+
+</body>
+
+</html>
